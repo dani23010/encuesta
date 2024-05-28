@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Broma de Programación</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        button {
+            font-size: 20px;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>¿me das el chiquito?</h1>
+    <button id="yesButton">Sí</button>
+    <button id="noButton">No</button>
+
+    <script>
+        document.getElementById('yesButton').addEventListener('click', function() {
+            alert('¡Felicidades te acabas de ganar una clavada.');
+        });
+
+        document.getElementById('noButton').addEventListener('mouseover', function() {
+            this.textContent = 'Sí';
+        });
+
+        document.getElementById('noButton').addEventListener('click', function() {
+            alert('¡Felicidades! te acabas de ganar una clavada.');
+        });
+    </script>
+</body>
+</html>
